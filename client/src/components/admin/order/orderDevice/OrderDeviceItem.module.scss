@@ -1,0 +1,14 @@
+.device {
+	display: grid;
+	grid-template-columns: 0.1fr 5fr 0.2fr;
+	justify-items: start;
+	column-gap: 0.2rem;
+}
+
+.btn {
+	background: transparent;
+	color: #fff;
+	&:hover {
+		color: rgba(255, 255, 255, 0.651);
+	}
+}

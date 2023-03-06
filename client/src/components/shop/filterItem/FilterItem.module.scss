@@ -1,0 +1,53 @@
+.brand {
+	background: transparent;
+	color: #fff;
+	margin-left: 1rem;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		left: -1.2rem;
+		min-width: 1rem;
+		height: 1rem;
+		border: 1px solid #736b5e;
+		background: #181a1b;
+		border-radius: 0.2rem;
+	}
+	&:hover {
+		color: rgba(255, 255, 255, 0.8);
+		&::before {
+			border: 1px solid #736b5ea2;
+			background: #181a1b81;
+		}
+	}
+	@media (max-width: 991px) {
+		margin-left: 0;
+		background: rgb(42, 45, 47);
+		padding: 0.4rem 0.8rem;
+		border-radius: 1rem;
+		&::before,
+		&::after {
+			display: none;
+		}
+	}
+}
+
+.active {
+	color: #ff6a00;
+	&::after {
+		content: "✓";
+		color: #fff;
+		position: absolute;
+		top: -0.15rem;
+		left: -1.2rem;
+		width: 1rem;
+		height: 1rem;
+	}
+	&::before {
+		background: rgb(119, 118, 118);
+	}
+	@media (max-width: 991px) {
+		background: rgb(73, 79, 82);
+		color: #fff;
+	}
+}

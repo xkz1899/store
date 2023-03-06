@@ -1,0 +1,48 @@
+.stars {
+	display: flex;
+	align-self: flex-end;
+	button {
+		background: transparent;
+		color: #ff6a00;
+		font-size: 2rem;
+		transition: 0.2s;
+		&:hover {
+			transform: scale(1.1);
+		}
+		&:active {
+			transform: scale(1);
+		}
+	}
+}
+
+.star {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h3 {
+		font-size: 1.2rem;
+	}
+}
+
+.error {
+	color: #f00;
+	text-align-last: right;
+	margin-top: 1rem;
+}
+
+.rate {
+	display: flex;
+	column-gap: 0.2rem;
+	font-size: 2rem;
+	svg {
+		color: #ff6a00;
+	}
+}
+
+.wrap {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	column-gap: 1.5rem;
+	margin-top: 1rem;
+}

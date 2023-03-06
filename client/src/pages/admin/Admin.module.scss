@@ -1,0 +1,13 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 0.2fr 5fr;
+	column-gap: 2%;
+	padding-bottom: 3.8rem;
+	width: 100%;
+}
+
+.line {
+	height: 100%;
+	background: #fff;
+	width: 1px;
+}

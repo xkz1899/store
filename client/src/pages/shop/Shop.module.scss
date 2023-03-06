@@ -1,0 +1,9 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: 1.5fr 5fr;
+	column-gap: 1rem;
+	@media (max-width: 991px) {
+		 grid-template-columns: 1fr;
+	}
+}
+

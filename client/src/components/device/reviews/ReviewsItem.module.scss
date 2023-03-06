@@ -1,0 +1,38 @@
+.comment {
+	border: 1px solid rgb(171, 164, 153);
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.delete {
+	background: transparent;
+	color: #f00;
+	&:hover {
+		color: rgba(255, 0, 0, 0.6);
+	}
+	&:active {
+		color: rgba(255, 0, 0, 0.5);
+	}
+}
+
+.remove {
+	display: flex;
+	column-gap: 0.5rem;
+}
+
+.create {
+	color: rgb(171, 164, 153);
+	font-size: 0.6rem;
+	margin: 0.2rem 0;
+}
+
+.title {
+	font-size: 1.25rem;
+	margin-bottom: 0.3rem;
+}

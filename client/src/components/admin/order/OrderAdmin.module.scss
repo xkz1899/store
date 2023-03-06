@@ -1,0 +1,27 @@
+.wrapper {
+	@media (max-width: 991px) {
+		padding-bottom: 3.8rem;
+	}
+}
+
+.access {
+	text-align: center;
+}
+
+.title {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.visible {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+}

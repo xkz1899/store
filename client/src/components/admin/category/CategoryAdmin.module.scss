@@ -1,0 +1,73 @@
+.change {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 0.5rem;
+}
+
+.hide {
+	background: transparent;
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+.show {
+	transform: rotate(90deg);
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.create {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+	display: inline-flex;
+	button {
+		align-self: flex-end;
+	}
+}
+
+.update {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+}
+
+.create,
+.update {
+	input {
+		padding: 0.4rem 0.8rem;
+		background: transparent;
+		color: #fff;
+		border-bottom: 1px solid rgb(59, 59, 59);
+	}
+}
+
+.all_category {
+	background: transparent;
+	color: #fff;
+	border: 1px solid rgb(59, 59, 59);
+	padding: 0.2rem 0.4rem;
+	border-radius: 0.2rem;
+
+	option {
+		color: #000;
+	}
+}
+
+.btns {
+	display: flex;
+	column-gap: 0.3rem;
+}
+
+.access {
+	text-align: center;
+}
+
+.title {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}

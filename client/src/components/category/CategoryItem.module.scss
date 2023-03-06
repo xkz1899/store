@@ -1,0 +1,13 @@
+.category {
+	text-align-last: left;
+	background: transparent;
+	color: #fff;
+	font-size: 1.3rem;
+	&:hover {
+		color: #ff6a00;
+	}
+	&:active {
+		color: #fff;
+	}
+}
+

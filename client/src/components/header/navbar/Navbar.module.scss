@@ -1,0 +1,137 @@
+.wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 1rem;
+	min-height: 3.1rem;
+	@media (max-width: 991px) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: center;
+	}
+}
+
+.menu {
+	display: none;
+	background: transparent;
+	color: #fff;
+	&:hover {
+		color: #ff6a00;
+	}
+	&:active {
+		color: #ff6a00b2;
+	}
+	@media (max-width: 991px) {
+		display: block;
+		justify-self: start;
+	}
+}
+
+.logo {
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: #ff6a00;
+	white-space: nowrap;
+
+	&:hover {
+		color: #ff6a00bd;
+	}
+	&:active {
+		color: #ff6a00;
+	}
+}
+
+.search {
+	display: none;
+	width: 100%;
+	& > div {
+		width: 100%;
+	}
+	@media (max-width: 991px) {
+		display: flex;
+		justify-self: end;
+	}
+}
+
+.nav {
+	@media (max-width: 991px) {
+		display: none;
+	}
+}
+
+.auth_not {
+	display: flex;
+	column-gap: 1rem;
+	a {
+		font-size: 0.9rem;
+		padding: 0.3rem 1rem;
+		border-radius: 0.5rem;
+		background: transparent;
+		color: rgb(171, 164, 153);
+		border: 1px solid rgb(171, 164, 153);
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: scale(1);
+		transition: 0.3s;
+		&:hover {
+			border: 1px solid #ff6a00;
+			color: #ff6a00;
+			transform: scale(1.05);
+		}
+		&:active {
+			transform: scale(1);
+		}
+	}
+}
+
+.auth {
+	display: flex;
+	align-items: center;
+	column-gap: 0.8rem;
+}
+
+.exit {
+	font-size: 0.9rem;
+	padding: 0.3rem 1rem;
+	border-radius: 0.5rem;
+	background: transparent;
+	color: rgb(171, 164, 153);
+	border: 1px solid rgb(171, 164, 153);
+	position: relative;
+	top: 0;
+	left: 0;
+	transform: scale(1);
+	transition: 0.3s;
+	&:hover {
+		border: 1px solid #ff6a00;
+		color: #ff6a00;
+		transform: scale(1.05);
+	}
+	&:active {
+		transform: scale(1);
+	}
+}
+
+.block {
+	display: flex;
+	align-items: center;
+	column-gap: 0.5rem;
+}
+
+.user {
+	display: flex;
+	align-items: center;
+	column-gap: 0.3rem;
+	background: transparent;
+	color: rgb(171, 164, 153);
+	&:hover {
+		color: #ff6a00;
+	}
+	svg {
+		font-size: 1.5rem;
+	}
+	p {
+		font-size: 1.3;
+	}
+}

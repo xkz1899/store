@@ -1,0 +1,50 @@
+.title {
+	font-weight: 800;
+	margin: 0.3rem 0;
+}
+
+.create {
+	padding: 0.3rem 0.6rem;
+	border-radius: 0.5rem;
+	background: #ff6a00;
+	color: #fff;
+	margin-top: 0.5rem;
+	&:hover {
+		background: #ff6a00a6;
+	}
+	&:active {
+		background: #ff6a00;
+	}
+}
+
+.red {
+	color: #f00;
+}
+
+.green {
+	color: #0f0;
+}
+
+.description {
+	border: 1px solid rgb(59, 59, 59);
+}
+
+.upload {
+	background: transparent;
+	color: #fff;
+	font-size: 2rem;
+	display: flex;
+	align-items: center;
+	column-gap: 0.5rem;
+	label {
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+	}
+	input {
+		display: none;
+	}
+	span {
+		font-size: 1rem;
+	}
+}

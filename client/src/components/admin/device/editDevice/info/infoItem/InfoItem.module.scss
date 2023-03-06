@@ -1,0 +1,95 @@
+.characteristic {
+	display: grid;
+	grid-template-columns: 1fr 1fr 0.1fr;
+	width: 100%;
+	align-items: center;
+	column-gap: 0.4rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	&:hover {
+		background: #000;
+	}
+	@media (max-width: 991px) {
+		grid-template-columns: 1fr 0.5fr 0.1fr;
+	}
+	@media (max-width: 767px) {
+		grid-template-columns: 1fr;
+		row-gap: 0.5rem;
+		border: 1px solid #3a3a3a;
+		border-radius: 1rem;
+
+		h4 {
+			text-align: center;
+		}
+		&:hover {
+			background: transparent;
+		}
+	}
+}
+
+.confirm {
+	display: none;
+	text-align: right;
+	button {
+		background: transparent;
+		color: #fff;
+	}
+}
+
+.active {
+	display: block;
+}
+
+.yes {
+	color: #fff;
+	&:hover {
+		color: #0f0;
+	}
+	&:active {
+		color: rgba(0, 255, 0, 0.5);
+	}
+}
+
+.no {
+	margin-left: 0.5rem;
+	color: #fff;
+	&:hover {
+		color: #f00;
+	}
+	&:active {
+		color: rgba(255, 0, 0, 0.5);
+	}
+}
+
+.remove {
+	color: #f00;
+	background: transparent;
+	position: relative;
+	@media (max-width: 767px) {
+		display: none;
+	}
+	svg {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&:hover {
+		color: rgba(255, 0, 0, 0.7);
+	}
+}
+
+.remove_phone {
+	background: transparent;
+	align-self: center;
+	color: #f00;
+	display: none;
+	@media (max-width: 767px) {
+		display: block;
+	}
+	&:hover {
+		color: rgba(255, 0, 0, 0.7);
+	}
+	&:active {
+		color: rgba(255, 0, 0, 0.5);
+	}
+}

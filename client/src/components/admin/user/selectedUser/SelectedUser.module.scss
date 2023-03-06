@@ -1,0 +1,97 @@
+.wrap {
+	border: 1px solid rgb(202, 195, 195);
+	border-radius: 1rem;
+
+	padding: 1rem;
+}
+
+.title {
+	font-size: 1.5rem;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.delete_btn {
+	background: transparent;
+	color: #f00;
+	&:hover {
+		color: rgba(255, 0, 0, 0.7);
+	}
+	&:active {
+		color: rgba(255, 0, 0, 0.5);
+	}
+}
+
+.banned {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.email {
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+	column-gap: 1rem;
+}
+
+.login {
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+	column-gap: 1rem;
+}
+
+.date {
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+	column-gap: 1rem;
+}
+
+.roles {
+	display: flex;
+	column-gap: 0.5rem;
+	font-size: 1.2rem;
+}
+
+.user {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+}
+
+.status {
+	display: flex;
+	align-items: center;
+	column-gap: 0.5rem;
+}
+
+.ban_message {
+	margin-top: 0.4rem;
+	padding: 0.2rem 0.4rem;
+	border-radius: 0.5rem;
+	background: rgb(53, 53, 53);
+	color: #fff;
+}
+
+.ban {
+	display: flex;
+	column-gap: 0.5rem;
+}
+
+.remove_ban {
+	color: #0f0;
+	background: transparent;
+	&:hover {
+		color: rgba(0, 255, 0, 0.7);
+	}
+	&:active {
+		color: rgba(0, 255, 0, 0.5);
+	}
+}

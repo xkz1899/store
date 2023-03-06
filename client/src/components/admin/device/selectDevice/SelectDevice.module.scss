@@ -1,0 +1,40 @@
+.device {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-center;
+	row-gap: 0.2rem;
+	width: 100%;
+	border: 1px solid #3b3b3b;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	
+}
+
+.device_btn {
+	background: transparent;
+	color: #fff;
+	align-self: center;
+	&:hover {
+		color: #928d8d;
+	}
+	&:active {
+		color: #928d8db4;
+	}
+	@media (max-width: 991px) {
+		 font-size: 1.3rem;
+	}
+}
+
+.pagination {
+	margin-top: 1rem;
+	align-self: center;
+}
+
+.active {
+	color: #928d8d;
+}
+
+.empty {
+	width: 100%;
+	text-align: center;
+}

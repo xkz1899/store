@@ -1,0 +1,41 @@
+.wrap {
+	border: 1px solid #fff;
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.3rem;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.device_list {
+	padding: 0.5rem;
+}
+
+.title {
+	font-weight: 800;
+}
+
+.visible {
+	display: flex;
+	align-items: center;
+}
+
+.trash {
+	background: transparent;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	&:hover {
+		color: #ff6a00;
+	}
+	&:active {
+		color: #ff6a00a9;
+	}
+}
+
+.delete {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	column-gap: 0.5rem;
+}
