@@ -1,0 +1,33 @@
+.cart {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: rgb(171, 164, 153);
+	background: transparent;
+	font-size: 1rem;
+	&:hover {
+		color: #ff6a00;
+	}
+	svg {
+		font-size: 1.2rem;
+	}
+}
+
+.count {
+	position: absolute;
+	top: -0.3rem;
+	right: 0.3rem;
+	display: inline-block;
+	min-width: 1rem;
+	padding: 0px 0.31rem;
+	border-radius: 1.25rem;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 1rem;
+	font-size: 0.625rem;
+	background: #ff6a00;
+	color: rgb(232, 230, 227);
+	white-space: nowrap;
+}

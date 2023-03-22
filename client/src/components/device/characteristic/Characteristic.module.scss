@@ -1,0 +1,30 @@
+.wrap {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+	padding-bottom: 1rem;
+	@media (max-width: 991px) {
+		padding-bottom: 3.8rem;
+	}
+}
+
+.item {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 0.2rem;
+	font-size: 1rem;
+}
+
+.even {
+	background: rgb(124, 124, 124);
+}
+
+.odd {
+	background: #000;
+}
+
+.empty {
+	text-align: center;
+	padding: 2rem 0;
+}

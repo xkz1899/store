@@ -1,0 +1,33 @@
+.user {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	column-gap: 0.3rem;
+	justify-content: center;
+	padding: 0.2rem 0.4rem;
+	border-radius: 0.4rem;
+	@media (max-width: 991px) {
+		 grid-template-columns: 1fr;
+		 row-gap: 0.2rem;
+		 border: 1px solid rgb(126, 118, 118);
+	}
+	&:hover {
+		background: #131414;
+		transform: scale(1.02);
+		cursor: pointer;
+	}
+	&:active {
+		transform: scale(1);
+	}
+}
+
+.delete {
+	background: transparent;
+	color: #f00;
+	&:hover {
+		color: rgba(255, 0, 0, 0.7);
+	}
+	&:active {
+		color: rgba(255, 0, 0, 0.5);
+	}
+}

@@ -1,0 +1,93 @@
+.title {
+	margin: 0.4rem 0;
+	font-weight: 800;
+}
+
+.visible {
+	display: flex;
+	align-items: center;
+}
+
+.description {
+	padding: 0.4rem 0.8rem;
+	display: block;
+	height: 5rem;
+	overflow: auto;
+	background: transparent;
+	color: #fff;
+	border: 1px solid rgb(59, 59, 59);
+	width: 100%;
+	&::-webkit-scrollbar {
+		width: 0.5rem;
+	}
+	&::-webkit-scrollbar-track {
+		background: rgb(59, 59, 59);
+	}
+	&::-webkit-scrollbar-thumb {
+		background: #777;
+		&:hover {
+			background: #666;
+		}
+		&:active {
+			background: #555;
+		}
+	}
+}
+
+.price {
+	display: flex;
+	align-items: center;
+	column-gap: 0.3rem;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.2rem;
+}
+
+.flex {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	column-gap: 0.3rem;
+	margin-top: 0.5rem;
+}
+
+.apply {
+	color: #0f0;
+}
+
+.wrap {
+	display: block;
+}
+
+.brand {
+	display: flex;
+	align-items: center;
+	column-gap: 1rem;
+}
+
+.empty {
+	text-align: center;
+	margin: 0.4rem 0;
+}
+
+.recommend {
+	padding: 0.3rem 0.6rem;
+	border-radius: 0.5rem;
+	margin: 0.4rem 0;
+}
+
+.add {
+	color: #0f0;
+	background: transparent;
+	border: 1px solid #0f0;
+}
+
+.remove {
+	color: #f00;
+	background: transparent;
+	border: 1px solid #f00;
+}

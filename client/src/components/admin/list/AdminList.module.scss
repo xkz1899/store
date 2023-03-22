@@ -1,0 +1,19 @@
+.wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	height: 100%;
+}
+
+.btn {
+	background: transparent;
+	font-size: 1.3rem;
+	color: #fff;
+	&:hover {
+		color: #ff6a00;
+	}
+}
+
+.active {
+	color: #ff6a00;
+}

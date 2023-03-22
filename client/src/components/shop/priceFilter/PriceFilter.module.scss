@@ -1,0 +1,24 @@
+.price_input {
+	display: flex;
+	align-items: center;
+	column-gap: 5%;
+	input {
+		padding: 0.5rem 1rem;
+		border-radius: 0.5rem;
+		width: 50%;
+		background: rgb(24, 26, 27);
+		color: #fff;
+		font-size: 1rem;
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+	}
+}
+
+.title {
+	font-size: 1.2rem;
+	font-weight: 800;
+	margin-bottom: 0.5rem;
+}

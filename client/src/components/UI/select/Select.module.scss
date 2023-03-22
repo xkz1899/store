@@ -1,0 +1,15 @@
+.select {
+	display: inline-flex;
+	background: transparent;
+	color: #fff;
+	border: 1px solid rgb(59, 59, 59);
+	padding: 0.2rem 0.4rem;
+	border-radius: 0.2rem;
+	max-width: 10rem;
+	width: 100%;
+	option {
+		background: #131516;
+		color: #fff;
+		border: 1px solid rgb(99, 99, 99);
+	}
+}

@@ -1,0 +1,46 @@
+.search {
+	width: 30%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	@media (max-width: 991px) {
+		width: 0%;
+	}
+	input {
+		position: absolute;
+		display: flex;
+		width: 100%;
+		padding: 0.2rem 0.3rem;
+		border-bottom: 1px solid rgb(57, 61, 64);
+		background: transparent;
+		color: #fff;
+		@media (max-width: 991px) {
+			visibility: hidden;
+			transition: 0.5s;
+			width: 0%;
+			right: 0;
+		}
+	}
+	button {
+		color: #fff;
+		background: transparent;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		@media (max-width: 991px) {
+			top: 50%;
+		}
+	}
+}
+
+.active {
+	@media (max-width: 991px) {
+		width: 100%;
+		input {
+			visibility: visible;
+			transition: 0.5s;
+			width: 100%;
+		}
+	}
+}

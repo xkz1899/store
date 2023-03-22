@@ -1,0 +1,31 @@
+.title {
+	font-weight: 800;
+	margin: 0.4rem 0;
+}
+
+.slide {
+	border: 1px solid rgba(255, 255, 255, 0.527);
+	padding: 1rem;
+	border-radius: 1rem;
+
+	img {
+		margin-bottom: 0.5rem;
+		width: 100%;
+		object-fit: contain;
+	}
+	p {
+		text-align: center;
+	}
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+}
+
+.change {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}

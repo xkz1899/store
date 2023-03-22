@@ -1,0 +1,10 @@
+.wrap {
+	background: #1d2021;
+	height: 100%;
+	border-top: 1px solid rgb(57, 61, 64);
+	padding: 0.5rem 0;
+	margin-top: 3.8rem;
+	@media (max-width: 991px) {
+		padding-bottom: 3.8rem;
+	}
+}

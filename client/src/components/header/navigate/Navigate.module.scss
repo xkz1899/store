@@ -1,0 +1,16 @@
+.wrap {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	border-top: 1px solid rgb(192, 192, 192);
+	width: 100%;
+	background: #131516;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0.5rem 0;
+	z-index: 1000;
+	@media (max-width: 991px) {
+		display: flex;
+	}
+}

@@ -1,0 +1,56 @@
+.wrap {
+	display: grid;
+	grid-template-columns: 2fr 5fr;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	row-gap: 0.4rem;
+	margin-right: 15%;
+	font-size: 1.1rem;
+}
+
+.star {
+	display: flex;
+	column-gap: 0.3rem;
+	svg {
+		color: #ff6a00;
+	}
+}
+
+.rating {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.2rem;
+}
+
+.rate {
+	display: flex;
+	align-items: center;
+}
+
+.percent {
+	width: 2.2rem;
+	text-align: right;
+}
+
+.line {
+	margin: 0 0.4rem;
+	height: 0.3em;
+	width: 75%;
+	background: #333;
+	border-radius: 1rem;
+	position: relative;
+	div {
+		z-index: 100;
+		background: #fff;
+		height: 100%;
+		border-radius: 1rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}

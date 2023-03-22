@@ -1,0 +1,33 @@
+.confirm_delete {
+	margin-top: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	button {
+		background: transparent;
+		color: #fff;
+	}
+}
+.yes,
+.no {
+	&:hover {
+		transform: scale(1.2);
+	}
+}
+.yes {
+	&:hover {
+		color: #f00;
+	}
+}
+
+.no {
+	&:hover {
+		color: #0f0;
+	}
+}
+
+.btns {
+	margin-top: 0.2rem;
+	display: flex;
+	column-gap: 0.5rem;
+}

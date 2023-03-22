@@ -1,0 +1,28 @@
+.filter {
+	background: transparent;
+	color: #ff6a00;
+	font-size: 1.1rem;
+	align-self: flex-start;
+	display: none;
+	&:hover {
+		color: #ff6a00a6;
+	}
+	&:active {
+		color: #ff6a00c5;
+	}
+	@media (max-width: 991px) {
+		display: block;
+	}
+}
+
+.sorting {
+	display: flex;
+	align-items: center;
+	column-gap: 0.4rem;
+}
+
+.order {
+	display: flex;
+	align-items: center;
+	column-gap: 0.1rem;
+}

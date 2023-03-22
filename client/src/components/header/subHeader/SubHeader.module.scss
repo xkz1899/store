@@ -1,0 +1,36 @@
+.wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 2%;
+	margin-bottom: 1rem;
+	@media (max-width: 991px) {
+		display: none;
+	}
+}
+
+.catalog {
+	background: transparent;
+	color: #ff6a00;
+	border: 1px solid #ff6a00;
+	border-radius: 0.3rem;
+	padding: 0.4rem 0.8rem;
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	column-gap: 0.3rem;
+	&:hover {
+		color: #ff6a00a4;
+	}
+	&:active {
+		color: #ff6a00;
+	}
+	span {
+		font-size: 1.1rem;
+	}
+}
+
+.btns {
+	display: flex;
+	column-gap: 5%;
+}

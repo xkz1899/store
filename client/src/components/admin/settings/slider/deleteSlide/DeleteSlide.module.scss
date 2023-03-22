@@ -1,0 +1,16 @@
+.trash {
+	color: #fff;
+	background: transparent;
+	&:hover {
+		color: #ff6a00;
+	}
+	&:active {
+		color: #ff6a00a8;
+	}
+}
+
+
+.bin {
+  display: flex;
+  column-gap: 1rem;
+}

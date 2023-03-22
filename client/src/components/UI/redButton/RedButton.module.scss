@@ -1,0 +1,13 @@
+.red {
+	background: #f00;
+	color: #fff;
+	padding: 0.3rem 0.6rem;
+	border-radius: 0.5rem;
+	&:hover {
+		background: rgba(255, 0, 0, 0.7);
+	}
+	&:active {
+		background: rgba(255, 0, 0, 0.6);
+
+	}
+}

@@ -1,0 +1,21 @@
+.hide {
+	display: flex;
+	align-items: center;
+	background: transparent;
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+.show {
+	transform: rotate(90deg);
+}
+
+.visible {
+	display: flex;
+	align-items: center;
+}
+
+.title {
+	font-weight: 800;
+	margin: 0.4rem 0;
+}

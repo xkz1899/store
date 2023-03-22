@@ -1,0 +1,45 @@
+.wrap {
+	position: relative;
+	margin-top: 1rem;
+	@media (max-width: 991px) {
+		 display: none;
+	}
+}
+
+.item {
+	margin-bottom: 0.7rem;
+}
+
+.key {
+	color: rgb(171, 164, 153);
+	font-size: 1rem;
+}
+
+.value {
+	color: #fff;
+	font-size: 1rem;
+}
+
+.btn {
+	color: #ff6a00;
+	background: transparent;
+	svg {
+		display: inline-block;
+		position: absolute;
+		transform: translate(15%, 15%);
+	}
+
+	&:hover {
+		color: #ff6a00b0;
+	}
+	&:active {
+		color: #ff6a00;
+	}
+}
+
+.line {
+	width: 100%;
+	height: 1.3rem;
+	border-bottom: 1px solid rgb(223, 223, 225);
+	margin-bottom: 1rem;
+}

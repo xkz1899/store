@@ -1,0 +1,23 @@
+.list {
+	display: flex;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+	button {
+		border-bottom: 1px solid rgb(171, 164, 153);
+		background: transparent;
+		padding-bottom: 0.3rem;
+		font-size: 1rem;
+		color: rgb(171, 164, 153);
+		&:hover {
+			color: #fff;
+			border-bottom: 1px solid #fff;
+		}
+	}
+	button:not(:last-child) {
+		padding-right: 0.6rem;
+	}
+  .active {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+  }
+}
