@@ -3,11 +3,9 @@ export interface IComment {
 	message: string
 	createdAt: Date
 	updatedAt: Date
-	user: User
-}
-
-interface User {
-	id: number
-	email: string
-	login: string
+	user: {
+		id: number
+		email: string
+		login: string
+	}
 }

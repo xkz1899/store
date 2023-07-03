@@ -13,7 +13,9 @@ const FormRegistration = () => {
 	const [password, setPassword] = useState("")
 	const [login, setLogin] = useState("")
 
-	const { errorMessage } = useAppSelector(state => state.authReducer)
+	const { errorMessage, currentUser } = useAppSelector(
+		state => state.authReducer
+	)
 	const dispatch = useAppDispatch()
 
 	const router = useNavigate()
@@ -21,7 +23,7 @@ const FormRegistration = () => {
 	const createUser = () => {
 		if (email.length > 5 && password.length > 5 && login.length >= 3) {
 			dispatch(registration(email, password, login))
-			errorMessage && router(RouteName.MAIN)
+			Object.values(currentUser).length && router(RouteName.MAIN)
 		}
 	}
 
@@ -34,7 +36,7 @@ const FormRegistration = () => {
 		<div className={st.wrap}>
 			<div className={st.content}>
 				<h2 className={st.title}>Зарегистрироваться</h2>
-				{errorMessage && <p className={st.error}>Пользователь уже существует</p>}
+				{errorMessage && <p className={st.error}>{errorMessage}</p>}
 				<AuthInput value={email} setValue={setEmail} placeholder="E-mail" />
 				<PasswordInput password={password} setPassword={setPassword} />
 				<AuthInput value={login} setValue={setLogin} placeholder="Логин" />

@@ -4,9 +4,8 @@ const ApiError = require("../errors/apiError")
 class RoleService {
 	async saveRole(role) {
 		const exist = await Role.findOne({ where: { role } })
-		console.log(exist)
 		if (exist) {
-			throw ApiError.BadRequest(`Role exist.`)
+			return exist
 		}
 		return await Role.create({ role })
 	}
@@ -28,17 +27,18 @@ class RoleService {
 	}
 
 	async getRoleUserOrCreate() {
-		let role = await this.getOne("user")
-		if (!role) {
-			role = await Role.create({ role: "user" })
-		}
+		const role = await this.saveRole("user")
+		await this.saveRole("admin")
 		return role
 	}
 
 	async createUserRole(userId, roleId) {
+		let role = await UserRole.findOne({ where: { userId, roleId } })
+		if (userId == 1 && !role) {
+			await UserRole.create({ userId, roleId: 2 })
+		}
 		return await UserRole.create({ userId, roleId })
 	}
-
 }
 
 module.exports = new RoleService()

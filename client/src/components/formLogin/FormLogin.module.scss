@@ -25,6 +25,9 @@
 	@media (max-width: 767px) {
 		transform: translate(0px);
 	}
+	@media (max-height: 800px) {
+		transform: translateY(0);
+	}
 }
 
 .title {

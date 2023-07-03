@@ -1,4 +1,3 @@
-import React from "react"
 import { authRoute, publicRoute } from "./../routes/index"
 import { Routes, Route } from "react-router-dom"
 import { useAppSelector } from "../hooks/redux"

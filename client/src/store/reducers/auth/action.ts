@@ -9,13 +9,13 @@ export const registration =
 	async (dispatch: AppDispatch) => {
 		setAuthLoading(true)
 		try {
-			const response = await $host.post<ResponseAuth>(`/auth/registration`, {
+			const response = await $host.post<ResponseAuth>("/auth/registration", {
 				email,
 				password,
 				login,
 			})
 			dispatch(setCurrentUser(response.data.user))
-			localStorage.setItem(`accessToken`, response.data.accessToken)
+			localStorage.setItem("accessToken", response.data.accessToken)
 			dispatch(setAuth(true))
 			dispatch(setErrorMessage(null))
 		} catch (err: any) {
@@ -29,12 +29,12 @@ export const login =
 	(email: string, password: string) => async (dispatch: AppDispatch) => {
 		setAuthLoading(true)
 		try {
-			const response = await $host.post<ResponseAuth>(`/auth/login`, {
+			const response = await $host.post<ResponseAuth>("/auth/login", {
 				email,
 				password,
 			})
 			dispatch(setCurrentUser(response.data.user))
-			localStorage.setItem(`accessToken`, response.data.accessToken)
+			localStorage.setItem("accessToken", response.data.accessToken)
 			dispatch(setAuth(true))
 			dispatch(setErrorMessage(null))
 		} catch (err: any) {
@@ -46,21 +46,21 @@ export const login =
 
 export const logout = () => async (dispatch: AppDispatch) => {
 	try {
-		await $host.get(`/auth/logout`)
+		await $host.get("/auth/logout")
 		dispatch(setCurrentUser({} as IUser))
-		localStorage.removeItem(`accessToken`)
+		localStorage.removeItem("accessToken")
 		dispatch(setAuth(false))
-	} catch (err) {
-		console.log(err)
+	} catch (err: any) {
+		dispatch(setErrorMessage(err.response.data.message))
 	}
 }
 
 export const refresh = () => async (dispatch: AppDispatch) => {
 	setAuthLoading(true)
 	try {
-		const response = await $authHost.post<ResponseAuth>(`/auth/refresh`)
+		const response = await $authHost.post<ResponseAuth>("/auth/refresh")
 		dispatch(setCurrentUser(response.data.user))
-		localStorage.setItem(`accessToken`, response.data.accessToken)
+		localStorage.setItem("accessToken", response.data.accessToken)
 		dispatch(setAuth(true))
 	} catch (err) {
 		console.log(err)

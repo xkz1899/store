@@ -11,6 +11,9 @@ const commentService = require("./commentService")
 
 class DeviceService {
 	async create(name, description, price, rating, categoryId, img, brandId) {
+		if (!fs.existsSync(path.resolve(__dirname, "..", "static"))) {
+			fs.mkdirSync(path.resolve(__dirname, "..", "static"))
+		}
 		const fileName = uuid.v4() + ".jpg"
 		img.mv(path.resolve(__dirname, "..", "static", fileName))
 		const device = await Device.create({ name, description, price, rating, categoryId, img: fileName, brandId })

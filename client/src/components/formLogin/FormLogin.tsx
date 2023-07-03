@@ -9,7 +9,9 @@ import PasswordInput from "./../UI/passwordInput/PasswordInput"
 import st from "./FormLogin.module.scss"
 
 const FormLogin = () => {
-	const { errorMessage } = useAppSelector(state => state.authReducer)
+	const { errorMessage, currentUser } = useAppSelector(
+		state => state.authReducer
+	)
 	const [email, setEmail] = useState("")
 	const [password, setPassword] = useState("")
 	const dispatch = useAppDispatch()
@@ -18,7 +20,7 @@ const FormLogin = () => {
 	const enter = () => {
 		if (email.length > 5 && password.length > 5) {
 			dispatch(login(email, password))
-			errorMessage && router(RouteName.MAIN)
+			Object.values(currentUser).length && router(RouteName.MAIN)
 		}
 	}
 
@@ -31,7 +33,7 @@ const FormLogin = () => {
 		<div className={st.wrap}>
 			<div className={st.content}>
 				<h2 className={st.title}>Войти</h2>
-				{errorMessage && <p className={st.error}>Неверный логин или пароль</p>}
+				{errorMessage && <p className={st.error}>{errorMessage}</p>}
 				<AuthInput value={email} setValue={setEmail} placeholder="E-mail" />
 				<PasswordInput password={password} setPassword={setPassword} />
 				<div className={st.auth}>
